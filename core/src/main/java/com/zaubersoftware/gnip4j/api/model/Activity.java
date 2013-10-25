@@ -73,6 +73,8 @@ public class Activity implements Serializable {
     @JsonProperty(value = "long_object")
     Object longObject;
     
+    private Info info;
+    
     public final InReplyTo getInReplyTo() {
         return inReplyTo;
     }
@@ -508,5 +510,13 @@ public class Activity implements Serializable {
     
     public void setComment(final String comment) {
         this.comment = comment;
+    }
+    
+    public Info getInfo() {
+        return info;
+    }
+
+    public void setInfo(final Info info) {
+        this.info = info;
     }
 }
